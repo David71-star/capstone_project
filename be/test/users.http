@@ -1,0 +1,29 @@
+GET localhost:7777/users
+
+####
+
+GET http://localhost:7777/users/inserisciid
+
+
+####
+
+PATCH  http://localhost:7777/users/inserisciid
+Content-Type: application/json
+
+{
+    "password": "304qwerty"
+}
+####
+
+DELETE  http://localhost:7777/users/661f0288cf229add0e21e569
+
+
+####
+POST http://localhost:7777/addUsers
+Content-Type: application/json
+
+{
+    "nome": "David",
+    "email": "davidc@ring.com",
+    "password": "1234qwerty"
+}
