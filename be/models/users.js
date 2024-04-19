@@ -14,6 +14,26 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    // data: {
+    //   type: Date.now,
+    //   required: true,
+    // },
+    // primo: {
+    //   type: String,
+    //   required: true,
+    // },
+    // secondo: {
+    //   type: String,
+    //   required: true,
+    // },
+    // contorno: {
+    //   type: String,
+    //   required: true,
+    // },
+    // frutta: {
+    //   type: String,
+    //   required: true,
+    // },
   },
   { timestamps: true, statics: true }
 );

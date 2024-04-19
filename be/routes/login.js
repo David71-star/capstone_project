@@ -35,9 +35,21 @@ login.post("/login", async (req, res) => {
     // Generate JWT token with user information and set expiration time
     const token = jwt.sign(
       {
-        nome: user.nome,
-        cognome: user.cognome,
-        email: user.email,
+        theUser: {
+          nome: user.nome,
+          _id: user._id,
+          email: user.email,
+        },
+        // lunch: {
+        // pasto: {
+        //   primo: user.primo,
+        //   secondo: user.secondo,
+        //   contorno: user.contorno,
+        //   frutta: user.frutta,
+        // },
+        // _id: user._id,
+        // data: user.data,
+        // },
       },
       process.env.SECRET_KEY,
       {
