@@ -1,4 +1,4 @@
-GET localhost:7777/users
+GET http://localhost:7777/users
 
 ####
 
@@ -7,15 +7,15 @@ GET http://localhost:7777/users/inserisciid
 
 ####
 
-PATCH  http://localhost:7777/users/inserisciid
+PATCH  http://localhost:7777/users/661f05ac7fdba54b8d7a2f3c
 Content-Type: application/json
 
 {
-    "password": "304qwerty"
+    "nome": ""
 }
 ####
 
-DELETE  http://localhost:7777/users/661f0288cf229add0e21e569
+DELETE  http://localhost:7777/users/6620028460f4717897a81b37
 
 
 ####
@@ -23,7 +23,7 @@ POST http://localhost:7777/addUsers
 Content-Type: application/json
 
 {
-    "nome": "David",
-    "email": "davidc@ring.com",
-    "password": "1234qwerty"
+    "nome": "Mauro",
+    "email": "mauro@gmail.com",
+    "password": "ciao1234"
 }

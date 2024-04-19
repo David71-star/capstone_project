@@ -1,0 +1,26 @@
+GET  http://localhost:7777/food
+
+####
+
+POST http://localhost:7777/addFood
+Content-Type: application/json
+
+{
+    "img": "https://www.buttalapasta.it/wp-content/uploads/2016/05/verdure-grigliate-come-si-fanno.jpg",
+    "title": "Verdure grigliate",
+    "description": "piatto di verdure grigliate",
+    "tipo": "contorno"
+}
+
+####
+
+PATCH  http://localhost:7777/changeFood/661fdaffd3955c2c8f72f6df
+Content-Type: application/json
+
+{
+    "tipo": "Primo"
+}
+
+####
+
+DELETE http://localhost:7777/removeFood/

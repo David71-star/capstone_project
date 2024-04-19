@@ -21,9 +21,11 @@ app.use(cors());
 
 const userRoute = require("./routes/users.js");
 const loginRoute = require("./routes/login.js");
+const foodRoute = require("./routes/food.js");
 
 app.use("/", userRoute);
 app.use("/", loginRoute);
+app.use("/", foodRoute);
 
 app.listen(PORT, () =>
   console.log(`Server connected and listening on PORT ${PORT}`)

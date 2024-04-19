@@ -4,7 +4,7 @@ const UserModel = require("../models/users");
 const bcrypt = require("bcrypt");
 
 router.get("/users", async (req, res) => {
-  const { page = 3, pageSize = 2 } = req.query;
+  const { page = 1, pageSize = 2 } = req.query;
 
   try {
     const users = await UserModel.find()
