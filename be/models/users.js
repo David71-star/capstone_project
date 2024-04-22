@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const OrderModel = require("./order");
 
 const UserSchema = new mongoose.Schema(
   {
@@ -14,26 +15,12 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    // data: {
-    //   type: Date.now,
-    //   required: true,
-    // },
-    // primo: {
-    //   type: String,
-    //   required: true,
-    // },
-    // secondo: {
-    //   type: String,
-    //   required: true,
-    // },
-    // contorno: {
-    //   type: String,
-    //   required: true,
-    // },
-    // frutta: {
-    //   type: String,
-    //   required: true,
-    // },
+    data: {
+      type: Date,
+      default: Date.now,
+      required: false,
+    },
+    orders: [{ type: mongoose.Schema.Types.ObjectId, ref: "OrderModel" }],
   },
   { timestamps: true, statics: true }
 );

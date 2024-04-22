@@ -1,0 +1,6 @@
+POST http://localhost:7777/addOrder/66251c3dda7d4a8bf1080d28
+Content-Type: application/json
+
+{
+    "primo": "Spaghetti al Sugo"
+}

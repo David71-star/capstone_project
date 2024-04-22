@@ -2,7 +2,7 @@ GET http://localhost:7777/users
 
 ####
 
-GET http://localhost:7777/users/inserisciid
+GET http://localhost:7777/users/66251c3dda7d4a8bf1080d28
 
 
 ####
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 ####
 
-DELETE  http://localhost:7777/users/6620028460f4717897a81b37
+DELETE  http://localhost:7777/users/6620028360f4717897a81b35
 
 
 ####
@@ -23,7 +23,7 @@ POST http://localhost:7777/addUsers
 Content-Type: application/json
 
 {
-    "nome": "Mauro",
-    "email": "mauro@gmail.com",
-    "password": "ciao1234"
+    "nome": "David",
+    "email": "david@gmail.com",
+    "password": "david"
 }

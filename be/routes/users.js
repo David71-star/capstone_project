@@ -4,18 +4,18 @@ const UserModel = require("../models/users");
 const bcrypt = require("bcrypt");
 
 router.get("/users", async (req, res) => {
-  const { page = 1, pageSize = 2 } = req.query;
+  // const { page = 1, pageSize = 2 } = req.query;
 
   try {
-    const users = await UserModel.find()
-      .limit(pageSize)
-      .skip((page - 1) * pageSize);
+    const users = await UserModel.find();
+    // .limit(pageSize)
+    // .skip((page - 1) * pageSize);
 
-    const totalUsers = await UserModel.countDocuments();
+    // const totalUsers = await UserModel.countDocuments();
 
     res.status(200).send({
-      currentPage: +page,
-      tatalPages: Math.ceil(totalUsers / pageSize),
+      // currentPage: +page,
+      // tatalPages: Math.ceil(totalUsers / pageSize),
       users,
     });
   } catch (e) {
@@ -57,12 +57,12 @@ router.patch("/users/:id", async (req, res) => {
 router.post("/addUsers", async (req, res) => {
   const salt = await bcrypt.genSalt(10);
   const hashedPassword = await bcrypt.hash(req.body.password, salt);
-  console.log(hashedPassword);
 
   const newUser = new UserModel({
     nome: req.body.nome,
     email: req.body.email,
     password: hashedPassword,
+    orders: [],
   });
 
   try {

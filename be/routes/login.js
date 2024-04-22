@@ -3,10 +3,18 @@ const login = express.Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const UserModel = require("../models/users");
+const OrderModel = require("../models/order");
 
 // Endpoint for user login
 login.post("/login", async (req, res) => {
   try {
+    const toDay = new Date();
+
+    const day = toDay.getDate();
+    const month = toDay.getMonth() + 1;
+    const year = toDay.getFullYear();
+    const readDate = `${day}-${month}-${year}`;
+
     // Find user by email
     const user = await UserModel.findOne({ email: req.body.email });
 
@@ -39,17 +47,9 @@ login.post("/login", async (req, res) => {
           nome: user.nome,
           _id: user._id,
           email: user.email,
+          data: readDate,
+          orders: [],
         },
-        // lunch: {
-        // pasto: {
-        //   primo: user.primo,
-        //   secondo: user.secondo,
-        //   contorno: user.contorno,
-        //   frutta: user.frutta,
-        // },
-        // _id: user._id,
-        // data: user.data,
-        // },
       },
       process.env.SECRET_KEY,
       {
