@@ -14,6 +14,7 @@ router.post("/addOrder/:id", async (req, res) => {
 
     // Creazione di un nuovo ordine
     const newOrder = new OrderModel({
+      userId: req.body.userId,
       primo: req.body.primo,
       secondo: req.body.secondo,
       contorno: req.body.contorno,
@@ -21,20 +22,10 @@ router.post("/addOrder/:id", async (req, res) => {
     });
 
     const savedOrder = await newOrder.save();
+    console.log("Ordine salvato:", savedOrder);
 
-    if (newOrder.primo) {
-      console.log(newOrder);
-      res.status(201).json({ primo: savedOrder.primo });
-    } else if (newOrder.secondo) {
-      res.status(201).json({
-        secondo: savedOrder.secondo,
-      });
-    } else if (newOrder.contorno) {
-      res.status(201).json({
-        contorno: savedOrder.contorno,
-      });
-    } else if (newOrder.frutta) {
-      res.status(201).json({ frutta: savedOrder.frutta });
+    if (newOrder) {
+      res.status(201).json({ savedOrder });
     }
   } catch (error) {
     console.error("Errore durante l'aggiunta dell'ordine:", error);
