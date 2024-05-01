@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 ####
 
-DELETE  http://localhost:7777/users/6620028360f4717897a81b35
+DELETE  http://localhost:7777/users/6626908e4bb8f9a7a020700e
 
 
 ####
@@ -23,7 +23,7 @@ POST http://localhost:7777/addUsers
 Content-Type: application/json
 
 {
-    "nome": "David",
-    "email": "david@gmail.com",
-    "password": "david"
+    "nome": "Mauro",
+    "email": "Mauro@gmail.com",
+    "password": "mauro"
 }

@@ -4,3 +4,14 @@ Content-Type: application/json
 {
     "primo": "Spaghetti al Sugo"
 }
+
+####
+
+DELETE http://localhost:7777/removeOrder/662a7cdd208fded94a8c1170/6630103a9d8a2b1b8ebf63d7
+
+####
+
+GET http://localhost:7777/myOrders/662a7cdd208fded94a8c1170
+
+
+ 

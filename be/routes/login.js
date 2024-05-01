@@ -3,7 +3,6 @@ const login = express.Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const UserModel = require("../models/users");
-const OrderModel = require("../models/order");
 
 // Endpoint for user login
 login.post("/login", async (req, res) => {

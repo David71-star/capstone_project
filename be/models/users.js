@@ -20,7 +20,7 @@ const UserSchema = new mongoose.Schema(
       default: Date.now,
       required: false,
     },
-    orders: [{ type: mongoose.Schema.Types.ObjectId, ref: "OrderModel" }],
+    orders: [{ type: mongoose.Schema.Types.Mixed, ref: "OrderModel" }],
   },
   { timestamps: true, statics: true }
 );

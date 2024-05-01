@@ -6,9 +6,9 @@ POST http://localhost:7777/addFood
 Content-Type: application/json
 
 {
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgeeQI22-FZdznTm97eOhCWjcpvKx6_eA7A50Eivu-5Q&s",
-    "title": "Mela Verde",
-    "description": "ricco di vitamina C",
+    "img": "https://p0.pxfuel.com/preview/501/238/477/fruit-eating-dessert-healthy.jpg",
+    "title": "Uva",
+    "description": "Alimentare contenente fruttosio",
     "tipo": "frutto"
 }
 

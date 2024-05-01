@@ -4,9 +4,9 @@ const OrderSchema = new mongoose.Schema(
   {
     userId: {
       type: String,
-      required: true,
+      required: false,
     },
-    data: {
+    dataOrder: {
       type: Date,
       default: Date.now,
       required: false,
