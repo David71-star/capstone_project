@@ -14,11 +14,11 @@ Content-Type: application/json
 
 ####
 
-PATCH  http://localhost:7777/changeFood/661fdaffd3955c2c8f72f6df
+PATCH  http://localhost:7777/changeFood/6632625ec22868d1da0e373a
 Content-Type: application/json
 
 {
-    "tipo": "Primo"
+    "title": "Kiwi"
 }
 
 ####
