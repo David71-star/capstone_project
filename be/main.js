@@ -26,11 +26,13 @@ const userRoute = require("./routes/users.js");
 const loginRoute = require("./routes/login.js");
 const foodRoute = require("./routes/food.js");
 const orderRoute = require("./routes/order.js");
+const logoutRoute = require("./routes/logout.js");
 
 app.use("/", userRoute);
 app.use("/", loginRoute);
 app.use("/", foodRoute);
 app.use("/", orderRoute);
+app.use("/", logoutRoute);
 
 app.listen(PORT, () =>
   console.log(`Server connected and listening on PORT ${PORT}`)

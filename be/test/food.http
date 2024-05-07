@@ -9,18 +9,18 @@ Content-Type: application/json
     "img": "https://p0.pxfuel.com/preview/501/238/477/fruit-eating-dessert-healthy.jpg",
     "title": "Uva",
     "description": "Alimentare contenente fruttosio",
-    "tipo": "frutto"
+    "tipo": "frutta"
 }
 
 ####
 
-PATCH  http://localhost:7777/changeFood/6632625ec22868d1da0e373a
+PATCH  http://localhost:7777/changeFood/6622da3c3b64cb6df5909388
 Content-Type: application/json
 
 {
-    "title": "Kiwi"
+    "tipo": "frutta"
 }
 
 ####
 
-DELETE http://localhost:7777/removeFood/
+DELETE http://localhost:7777/removeFood/66326a97c22868d1da0e3758
