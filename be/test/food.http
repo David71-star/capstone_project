@@ -14,11 +14,11 @@ Content-Type: application/json
 
 ####
 
-PATCH  http://localhost:7777/changeFood/6622da3c3b64cb6df5909388
+PATCH  http://localhost:7777/changeFood/663268edc22868d1da0e374c
 Content-Type: application/json
 
 {
-    "tipo": "frutta"
+    "description": "Lattuga romana, pomodori e salsa Caesar"
 }
 
 ####
