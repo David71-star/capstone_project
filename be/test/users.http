@@ -23,7 +23,7 @@ POST http://localhost:7777/addUsers
 Content-Type: application/json
 
 {
-    "nome": "Mauro",
-    "email": "Mauro@gmail.com",
-    "password": "mauro"
+    "nome": "Efrem",
+    "email": "efrem@gmail.com",
+    "password": "efrem"
 }

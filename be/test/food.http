@@ -14,11 +14,11 @@ Content-Type: application/json
 
 ####
 
-PATCH  http://localhost:7777/changeFood/663268edc22868d1da0e374c
+PATCH  http://localhost:7777/changeFood/66326a23c22868d1da0e3754
 Content-Type: application/json
 
 {
-    "description": "Lattuga romana, pomodori e salsa Caesar"
+    "img": "https://www.mangiarevegan.it/wp-content/uploads/2016/08/ricette-ananas-785x490.jpg"
 }
 
 ####
