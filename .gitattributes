@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+[submodule "fe"]
+    path = fe
+    url = https://github.com/David71-star/fe.git
