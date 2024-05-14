@@ -2,4 +2,4 @@
 * text=auto
 [submodule "fe"]
     path = fe
-    url = https://github.com/David71-star/fe.git
+    url = https://github.com/David71-star/capstone_project/fe.git
